@@ -1,0 +1,24 @@
+body {
+  background-color: #cacaf0;
+}
+h1 {
+  text-align: center;
+}
+
+/* RESET BTN */
+.reset-btn {
+  display: block;
+  border-radius: 20px;
+  border: none;
+  background-color: white;
+  padding: 10px 20px;
+  font-weight: 700;
+  margin: 0 auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .4);
+  cursor: pointer;
+  transition: 100ms;
+}
+.reset-btn:active {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .4);
+  transform: translateY(2px);
+}
