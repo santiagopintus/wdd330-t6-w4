@@ -5,6 +5,39 @@ h1 {
   text-align: center;
 }
 
+/* BOARD */
+.board-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 20px auto;
+  width: fit-content;
+}
+.board-container .cell {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+}
+.board-container .cell:nth-child(1),
+.board-container .cell:nth-child(2),
+.board-container .cell:nth-child(4),
+.board-container .cell:nth-child(5),
+.board-container .cell:nth-child(7),
+.board-container .cell:nth-child(8) {
+  border-right: 1px solid;
+}
+.board-container .cell:nth-child(1),
+.board-container .cell:nth-child(2),
+.board-container .cell:nth-child(3),
+.board-container .cell:nth-child(4),
+.board-container .cell:nth-child(5),
+.board-container .cell:nth-child(6) {
+  border-bottom: 1px solid;
+}
+
 /* RESET BTN */
 .reset-btn {
   display: block;
